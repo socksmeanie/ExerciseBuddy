@@ -66,3 +66,13 @@ function clock() {
 }
 
     clock();
+/* --------- */
+
+  $("#enterDate").onClick(function (){
+      var date = new Date();
+      document.cookie = date
+
+
+      document.getElementById("time").innerHTML = date;
+
+  });
